@@ -4,11 +4,16 @@
              xmlns:local="clr-namespace:BuscarCep"
              x:Class="BuscarCep.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="0,20,0,0">
+
+        <Entry x:Name="txtCep"
+               Keyboard="Numeric"
+               Placeholder="Informar o CEP"/>
+
+        <Button x:Name="btnBuscarCEP"
+                Text="Buscar CEP"
+                Clicked="BtnBuscarCep_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>
